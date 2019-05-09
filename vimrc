@@ -83,7 +83,6 @@ nnoremap <left> <nop>
 nnoremap <right> <nop>
 inoremap <up> <nop>
 inoremap <down> <nop>
-inoremap . .<c-x><c-o><c-p>
 inoremap <tab> <c-n>
 inoremap <left> <nop>
 inoremap <right> <nop>
@@ -116,6 +115,7 @@ endif
 "------------------------------------------------------------------------------
 " filetypes
 "------------------------------------------------------------------------------
+au FileType go inoremap . .<c-x><c-o><c-p>
 au FileType ejs setl sw=2 sts=2 et colorcolumn=0
 au FileType html setl sw=2 sts=2 et colorcolumn=0
 au FileType htmldjango setl sw=4 sts=4 et colorcolumn=0
